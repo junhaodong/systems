@@ -4,6 +4,8 @@ Junhao Dong
 Systems Programming, Period 8
 
 Shell program  
+Tested on Linux (Ubuntu) environment
+
 Run with "make"  
 Exit with "exit", "quit", or Ctrl-D at the start of a line
 
@@ -31,6 +33,7 @@ Exit with "exit", "quit", or Ctrl-D at the start of a line
   - [ ] `<<`, `<<<`, redirection for `STDERR` and other file descriptors
 - [x] Handle `EOF` (Ctrl-D)
 - [x] Handle `SIGINT` (Ctrl-C)
+  - [ ] Re-print the prompt
 - [ ] Command history & navigation
 - [ ] Directory history & navigation (`cd -`)
 - [ ] Wildcard `*`
@@ -39,12 +42,11 @@ Exit with "exit", "quit", or Ctrl-D at the start of a line
 - [ ] Background processes: `&`
 
 
-###Bugs to be fixed
+###Bugs & Minor Enhancements
 ------
+- [x] Fix: Segfault when exiting with EOF after using `~` expansion, redirection, or pipes
 - [ ] Allow redirect and pipe symbols to be adjacent to commands or flags (not separated by space)
-- [ ] Allow tilde expansion to work in conjunction with redirection
-- [ ] Have `SIGINT` re-print the prompt
-- [ ] Fix: Exiting with EOF after using `~` expansion segfaults
+- [ ] Allow tilde expansion to work in conjunction with redirection e.g. `ls ~ > out`
 
 ## Function Headers
 shell.h

@@ -5,12 +5,6 @@
 
 #include "library.h"
 
-
-// Most things are commented out because I'm fiddling with var names and parameters
-// Everything compiled beforehand
-// Still had/have segfault, problem is in print_lib
-
-
 // ASCII 'A' = 65, 'a' = 97
 // Deals with upper and lower cases
 void add_song(Song **lib,Song *s) {
@@ -23,7 +17,6 @@ void add_song(Song **lib,Song *s) {
   }
 }
 
-/*
 Song * find_song(Song * lib, char *name) {
   int i=0;
   for (;i<26;i++) {
@@ -78,7 +71,7 @@ void print_lib(Song * lib) {
     printAll(lib+i);
   }
 }
-/*
+
 int size(Song ** lib) {
   int i=0;
   int size = 0;
@@ -113,8 +106,6 @@ void shuffle(Song ** lib, int n){ //prints out n random songs including repeats
     }
   }
 }
-
-
 
 int delete_song(Song ** lib, char *name, char *artist) {
   char firstchar = artist[0];
@@ -153,4 +144,3 @@ void delete_all(Song ** lib) {
     free(row);
   }
 }   
-*/

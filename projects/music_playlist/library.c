@@ -63,7 +63,7 @@ void print_songs_by_artist(Song ** lib, char* artist) {
     }
   }
 }
-*/  
+
 void print_lib(Song * lib) {
   int i;
   for (i=0;i<26;i++) {

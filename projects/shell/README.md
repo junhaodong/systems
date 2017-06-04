@@ -20,7 +20,7 @@ Exit with "exit", "quit", or Ctrl-D at the start of a line
 
 
 ## To Do
-###Enhancements
+### Enhancements
 ------
 - [x] Tilde expansion: `~` is interchangeable with user's $HOME directory
 - [x] Color prompt:
@@ -42,7 +42,7 @@ Exit with "exit", "quit", or Ctrl-D at the start of a line
 - [ ] Background processes: `&`
 
 
-###Bugs & Minor Enhancements
+### Bugs & Minor Enhancements
 ------
 - [x] Fix: Segfault when exiting with EOF after using `~` expansion, redirection, or pipes
 - [ ] Allow redirect and pipe symbols to be adjacent to commands or flags (not separated by space)
